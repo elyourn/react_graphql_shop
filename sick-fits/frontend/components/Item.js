@@ -7,6 +7,7 @@ import ItemStyles from './styles/ItemStyles'
 import PriceTag from './styles/PriceTag'
 import fromatMoney from '../lib/formatMoney';
 import DeleteItem from './DeleteItem';
+import AddToCart from './AddToCart';
 
 class Item extends Component {
     static PropTypes = {
@@ -43,7 +44,9 @@ class Item extends Component {
                             Edit
                         </a>
                     </Link>
-                    <button>Add To Cart</button>
+                    <AddToCart 
+                        id={item.id}
+                    />
                     <DeleteItem id={item.id}>
                         Delete this item
                     </DeleteItem>
