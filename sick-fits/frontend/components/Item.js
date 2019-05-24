@@ -10,7 +10,7 @@ import DeleteItem from './DeleteItem';
 import AddToCart from './AddToCart';
 
 class Item extends Component {
-    static PropTypes = {
+    static propTypes = {
         item: PropTypes.object.isRequired
     };
     
