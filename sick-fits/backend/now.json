@@ -1,0 +1,22 @@
+{
+    "version": 2,
+    "name": "sick-fits",
+    "builds": [
+        { "src": "src/index.js", "use": "@now/node-server" }
+    ],
+    "routes": [
+        { "src": "/.*", "dest": "src/index.js" }
+    ],
+    "env": {
+        "FRONTEND_URL":"http://localhost:7777",
+        "PRISMA_ENDPOINT":"https://eu1.prisma.sh/vladimir-balko-30fae1/sick-fits/dev",
+        "PRISMA_SECRET":"somestringwithsecret",
+        "APP_SECRET":"jwtsecret123",
+        "STRIPE_SECRET":"sk_test_ZHVb0eYrBpYQImARSfT7sXwe00LTT6XCmp",
+        "PORT": "4444",
+        "MAIL_HOST": "smtp.mailtrap.io",
+        "MAIL_PORT": "2525",
+        "MAIL_USER": "4944c269f791e5",
+        "MAIL_PASS": "5723dbca7d51ac"
+    }
+}
